@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('3.png') no-repeat center center/cover; /* Default background image */
+    background-color: #f0f0f0; /* Fallback background color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+
+.banner {
+    background-color: #4CAF50;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.container {
+    background-color: rgba(59, 76, 231, 0.8); /* Adjust the alpha (last value) for transparency */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 20px;
+    padding: 5vw;
+    margin-top: 40px;
+    text-align: center;
+    position: relative; /* Allows profile image positioning */
+    box-sizing: border-box;
+}
+
+
+.content {
+    display: flex;
+    align-items: flex-start; /* Aligns profile info and projects to the top */
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.left-section {
+    flex: 1;
+    text-align: left;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.profile-info h1 {
+    margin-top: 100px;
+    color: #212121;
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.profile-info p {
+    margin: 10px 0;
+    color: #000000;
+    font-weight: bold;
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+}
+
+.profile-image {
+    position: absolute;
+    top: 80px;
+    right: 70px;
+    width: clamp(150px, 20vw, 250px);
+    height: clamp(150px, 20vw, 250px);
+    border-radius: 50%;
+    border: 5px solid #4CAF50;
+    overflow: hidden; /* Ensures image stays inside the circle */
+    background-color: transparent; /* Removed default grey */
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the circle properly */
+}
+
+.projects {
+    display: flex;
+    gap: 20px;
+    margin-top: 170px;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: transparent; /* Removed background */
+    border: none;                  /* Removed border */
+    padding: 0;                    /* Removed padding */
+    text-align: center;
+}
+
+
+.icon {
+    width: 80px;
+    height: 80px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+    overflow: hidden; /* Ensures image stays inside the circle */
+    margin: 0 auto 10px;
+    border: 3px solid #03A9F4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images fit well inside circles */
+}
+
+.project p {
+    background-color: #4CAF50; /* Fresh Green (Primary Color) */
+    color: #fff; /* White text for better contrast */
+    border: none;
+    border-radius: 25px; /* Rounded button style */
+    padding: 10px 20px;
+    margin-top: 5px;
+    cursor: pointer; /* Pointer cursor for clickable effect */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block; /* Prevents text from stretching */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+}
+
+.project p:hover {
+    background-color: #388E3C; /* Darker green for hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.project a {
+    text-decoration: none; /* Removes underline from links */
+}
+
